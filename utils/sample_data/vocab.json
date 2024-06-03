@@ -1,0 +1,74 @@
+{
+  "-MiBsBKGWFEU-yluJkL-haha": {
+    "vocab_id": "-MiBt86VzkC-EGmJnxjmhaha",
+    "firebaseKey": "-MiBsBKGWFEU-yluJkL-haha",
+    "description": "a programming technique where a function calls itself in order to solve a problem",
+    "category": "coding",
+    "title": "recursion",
+    "uid": ""
+  },
+  "-MiBsknNSQ6aBG1-2lQShaha": {
+    "vocab_id": "-MiBsfuTafbEQ7eAULxVhaha",
+    "firebaseKey": "-MiBsknNSQ6aBG1-2lQShaha",
+    "description": "the system that translates domain names into ip addresses",
+    "category": "networking",
+    "title": "dns (domain name system)",
+    "uid": ""
+  },
+  "-MiBuCve4-r_H-RLUOh2haha": {
+    "vocab_id": "-MiBtwf1BwN9pGavQeR3haha",
+    "firebaseKey": "-MiBuCve4-r_H-RLUOh2haha",
+    "description": "the standard markup language for documents designed to be displayed in a web browser",
+    "category": "web development",
+    "title": "html (hypertext markup language)",
+    "uid": ""
+  },
+  "-MiBuU13EaKmGOMjJF-Xhaha": {
+    "vocab_id": "-MiBuOfHv9NCKB_cneijhaha",
+    "firebaseKey": "-MiBuU13EaKmGOMjJF-Xhaha",
+    "description": "a unique string of numbers separated by periods that identifies each computer using the internet protocol to communicate over a network",
+    "category": "web development",
+    "title": "ip address",
+    "uid": ""
+  },
+  "-MiBuqoYjFwbXyA8oiiwhaha": {
+    "vocab_id": "-MiBulenBnY8by9Xn7q1haha",
+    "firebaseKey": "-MiBuqoYjFwbXyA8oiiwhaha",
+    "description": "a method of programming that allows for multiple tasks to run concurrently without waiting for each other to complete.",
+    "category": "coding",
+    "title": "asynchronous programming",
+    "uid": ""
+  },
+  "-MiBvEFJTI3FmTzDu_3Vhaha": {
+    "vocab_id": "-MiBv9_aOEJQWoobjz_Uhaha",
+    "firebaseKey": "-MiBvEFJTI3FmTzDu_3Vhaha",
+    "description": "the delay before a transfer of data begins following an instruction for its transfer",
+    "category": "networking",
+    "title": "latency",
+    "uid": ""
+  },
+  "-MiBvW8ME_DvO2GzwQ8Dhaha": {
+    "vocab_id": "-MiBvQiWr6XNwNa1i3-0haha",
+    "firebaseKey": "-MiBvW8ME_DvO2GzwQ8Dhaha",
+    "description": "a way or organizing and storign data so that it can be accessed and modified efficiently",
+    "category": "coding",
+    "title": "data structure",
+    "uid": ""
+  },
+  "-MiBvf3bIyooE6x4nLLBhaha": {
+    "vocab_id": "-MiBvQiWr6XNwNa1i3-0haha",
+    "firebaseKey": "-MiBvf3bIyooE6x4nLLBhaha",
+    "description": "a style sheet language used to describe the presentation of a document written in a markup language",
+    "category": "web development",
+    "title": "css (cascading style sheet)",
+    "uid": ""
+  },
+  "-MiBwAF5wOY00AYJm7cRhaha": {
+    "vocab_id": "-MiBw4tCvNZd23yTVDQwhaha",
+    "firebaseKey": "-MiBwAF5wOY00AYJm7cRhaha",
+    "description": "a network security system that monitors and controls the flow of data between a computer and a computer network",
+    "category": "networking",
+    "title": "firewall",
+    "uid": ""
+  }
+}
