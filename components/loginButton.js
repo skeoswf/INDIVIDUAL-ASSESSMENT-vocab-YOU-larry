@@ -1,6 +1,5 @@
 import { signIn } from '../utils/auth';
 
-// GOOGLE LOGIN BUTTON
 // prettier-ignore
 const loginButton = () => {
   const domString = `
