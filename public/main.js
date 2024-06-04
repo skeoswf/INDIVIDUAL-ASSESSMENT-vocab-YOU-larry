@@ -4,11 +4,6 @@ import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
 
 const init = () => {
-  document.querySelector('#app').innerHTML = `
-    <h1>vocabYOUlary GET IT LMFAOOOOO ok</h1>
-    
-  `;
-  // USE WITH FIREBASE AUTH
   ViewDirectorBasedOnUserAuthStatus();
 };
 
