@@ -10,6 +10,7 @@ body {
 #google-auth {
   background-color: rgb(66, 148, 136);
   margin-top: 13px;
+  margin-right: 3.5vw;
   border-style: none;
 }
 
@@ -31,6 +32,8 @@ body {
   width: 95%;
   height: 65px;
   border: 1px solid white;
+  display: flex;
+  justify-content: space-between;
 }
 
 #card-container {
@@ -48,8 +51,8 @@ body {
 }
 
 #logo {
-  background-color: rgb(224, 207, 207);
   margin-top: 20px;
+  color: orange;
 }
 
 #form-entry {
@@ -61,4 +64,14 @@ body {
   width: 30%;
   display: flex;
   justify-content: space-around;
+}
+
+#loginHeader {
+  margin-top: 35vh;
+}
+
+.filter-buttons {
+  height: 25px;
+  margin-top: 20px;
+  line-height: 5px;
 }
