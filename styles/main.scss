@@ -37,6 +37,9 @@ body {
 }
 
 #card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin: 35px auto 0;
   width: 95%;
   height: 100%;
@@ -74,4 +77,9 @@ body {
   height: 25px;
   margin-top: 20px;
   line-height: 5px;
+}
+
+.card {
+  height: 250px;
+  margin: 10px;
 }

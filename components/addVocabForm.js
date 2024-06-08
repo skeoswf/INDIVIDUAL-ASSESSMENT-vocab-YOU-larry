@@ -16,7 +16,7 @@ const addVocabForm = (obj = {}) => {
       </div>
       <div class="form-group">
         <label for="category">select a category</label>
-        <select class="form-control" id="vocab_id" required>
+        <select class="form-control" id="vocab_category" required>
           <option value="coding" ${obj.category === 'coding' ? 'selected' : ''}>coding</option>
           <option value="networking" ${obj.category === 'networking' ? 'selected' : ''}>networking</option>
           <option value="web development" ${obj.category === 'web development' ? 'selected' : ''}>web development</option>

@@ -4,6 +4,8 @@ import navBar from '../components/shared/navBar';
 import logoutButton from '../components/logoutButton';
 import filterRow from '../components/shared/filterButtons';
 import domEvents from '../events/domEvents';
+import { showVocab } from '../pages/showVocab';
+import { getVocab } from '../api/vocabData';
 
 const startApp = () => {
   domBuilder();
@@ -12,6 +14,8 @@ const startApp = () => {
   navigationEvents();
   domEvents();
   logoutButton();
+
+  getVocab().then((vocab) => showVocab(vocab));
 };
 
 export default startApp;
