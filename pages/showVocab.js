@@ -1,4 +1,5 @@
 import renderToDOM from '../utils/renderToDom';
+import clearCardContainer from '../utils/clearCardContainer';
 
 const emptyVocab = () => {
   const domString = '<h1>no vocab</h1>';
@@ -8,6 +9,7 @@ const emptyVocab = () => {
 //  prettier-ignore
 const showVocab = (array) => {
   let domString = '';
+  clearCardContainer();
   array.forEach((item) => {
     domString += `
       <div class="card" style="width: 300px;">
