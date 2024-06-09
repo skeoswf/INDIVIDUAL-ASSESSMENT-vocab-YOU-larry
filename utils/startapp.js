@@ -6,6 +6,7 @@ import filterRow from '../components/shared/filterButtons';
 import domEvents from '../events/domEvents';
 import { showVocab } from '../pages/showVocab';
 import { getVocab } from '../api/vocabData';
+import formEvents from '../events/formEvents';
 
 const startApp = () => {
   domBuilder();
@@ -13,6 +14,7 @@ const startApp = () => {
   filterRow();
   navigationEvents();
   domEvents();
+  formEvents();
   logoutButton();
 
   getVocab().then((vocab) => showVocab(vocab));
