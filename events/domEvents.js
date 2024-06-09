@@ -6,9 +6,14 @@ const domEvents = () => {
     if (e.target.id.includes('form-entry')) {
       addVocabForm();
     }
+  });
+
+  document.querySelector('#card-container').addEventListener('click', (e) => {
     if (e.target.id.includes('edit-vocab-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((vocabObj) => addVocabForm(vocabObj));
+      getSingleVocab(firebaseKey).then((vocab) => {
+        addVocabForm(vocab);
+      });
     }
   });
 };

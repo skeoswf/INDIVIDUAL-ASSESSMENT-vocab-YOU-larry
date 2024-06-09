@@ -19,6 +19,19 @@ const formEvents = () => {
         });
       });
     }
+
+    if (e.target.id.includes('edit-vocab-btn')) {
+      const [, firebaseKey] = e.target.id.split('--');
+      const payload = {
+        title: document.querySelector('#title').value,
+        description: document.querySelector('#description').value,
+        category: document.querySelector('#vocab_category').value,
+        firebaseKey,
+      };
+      updateVocab(payload).then(() => {
+        getVocab().then(showVocab);
+      });
+    }
   });
 };
 
