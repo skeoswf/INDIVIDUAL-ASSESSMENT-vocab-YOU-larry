@@ -63,9 +63,23 @@ const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // prettier-ignore
+const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocab/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+// prettier-ignore
 export {
   getVocab,
   updateVocab,
   createVocab,
-  getSingleVocab
+  getSingleVocab,
+  deleteVocab
 };
