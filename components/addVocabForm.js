@@ -1,9 +1,9 @@
-import clearDom from '../utils/clearDom';
+import clearCardContainer from '../utils/clearCardContainer';
 import renderToDOM from '../utils/renderToDom';
 
 // prettier-ignore
 const addVocabForm = (obj = {}) => {
-  clearDom();
+  clearCardContainer();
   const domString = `
     <form id="${obj.firebaseKey ? `update-vocab--${obj.firebaseKey}` : 'submit-vocab'}" class="mb-4">
       <div class="form-group">
@@ -26,7 +26,7 @@ const addVocabForm = (obj = {}) => {
       </button>
     </form>`;
 
-  renderToDOM('#main-container', domString);
+  renderToDOM('#card-container', domString);
 };
 
 export default addVocabForm;

@@ -1,22 +1,25 @@
-import {
-  createVocab,
-  getVocab,
-  updateVocab,
-  showVocab,
-} from '../api/vocabData';
+import { createVocab, getVocab, updateVocab } from '../api/vocabData';
+import { showVocab } from '../pages/showVocab';
 
-if (e.target.id.includes('submit-vocab')) {
-  const payload = {
-    title: document.querySelector('#title').value,
-    description: document.querySelector('#description').value,
-    category: document.querySelector('#vocab_category').value,
-  };
+const formEvents = () => {
+  document.querySelector('#main-container').addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (e.target.id.includes('submit-vocab')) {
+      const payload = {
+        title: document.querySelector('#title').value,
+        description: document.querySelector('#description').value,
+        category: document.querySelector('#vocab_category').value,
+      };
 
-  createVocab(payload).then(({ name }) => {
-    const patchPayload = { firebaseKey: name };
+      createVocab(payload).then(({ name }) => {
+        const patchPayload = { firebaseKey: name };
 
-    updateVocab(patchPayload).then(() => {
-      getVocab().then(showVocab);
-    });
+        updateVocab(patchPayload).then(() => {
+          getVocab().then(showVocab); // showvocab is rendering in a div that isnt there anymore
+        });
+      });
+    }
   });
-}
+};
+
+export default formEvents;
