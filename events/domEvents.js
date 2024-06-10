@@ -11,6 +11,9 @@ const domEvents = (user) => {
     if (e.target.id.includes('logo')) {
       getVocab(user.uid).then((vocab) => showVocab(vocab));
     }
+    if (e.target.id.includes('italics')) {
+      getVocab(user.uid).then((vocab) => showVocab(vocab));
+    }
   });
 
   document.querySelector('#card-container').addEventListener('click', (e) => {
