@@ -6,7 +6,7 @@ const imageString = `<img src=${noteImage} alt="note" id="note" style="width: 10
 const navBar = () => {
   const domString = `
   <div id="left-nav-content">
-    <div id="logo">"VOCAB<i>YOU</i>LARY"</div>
+    <div id="logo">"VOCAB<i id="italics">YOU</i>LARY"</div>
     <div id="funny-form-box">
     <a id="form-entry" href="#">create entry</a>
     ${imageString}
