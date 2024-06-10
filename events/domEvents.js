@@ -2,14 +2,14 @@ import addVocabForm from '../components/addVocabForm';
 import { getSingleVocab, deleteVocab, getVocab } from '../api/vocabData';
 import { showVocab } from '../pages/showVocab';
 
-const domEvents = () => {
+const domEvents = (user) => {
   document.querySelector('#navigation').addEventListener('click', (e) => {
     if (e.target.id.includes('form-entry')) {
       addVocabForm();
     }
 
     if (e.target.id.includes('logo')) {
-      getVocab().then((vocab) => showVocab(vocab));
+      getVocab(user.uid).then((vocab) => showVocab(vocab));
     }
   });
 
@@ -28,7 +28,7 @@ const domEvents = () => {
         console.warn(firebaseKey);
 
         deleteVocab(firebaseKey).then(() => {
-          getVocab().then(showVocab);
+          getVocab(user.uid).then(showVocab);
         });
       }
     }
