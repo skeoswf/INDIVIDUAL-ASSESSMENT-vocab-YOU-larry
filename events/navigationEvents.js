@@ -2,18 +2,18 @@ import { signOut } from '../utils/auth';
 import { getVocab } from '../api/vocabData';
 import { showVocab } from '../pages/showVocab';
 
-const navigationEvents = () => {
+const navigationEvents = (user) => {
   document.querySelector('#logout-button').addEventListener('click', signOut);
 
   document.querySelector('#coding-filter').addEventListener('click', () => {
-    getVocab().then((vocab) => {
+    getVocab(user.uid).then((vocab) => {
       const filteredVocab = vocab.filter((word) => word.category === 'coding');
       showVocab(filteredVocab);
     });
   });
 
   document.querySelector('#networking-filter').addEventListener('click', () => {
-    getVocab().then((vocab) => {
+    getVocab(user.uid).then((vocab) => {
       const filteredVocab = vocab.filter(
         (word) => word.category === 'networking'
       );
@@ -24,7 +24,7 @@ const navigationEvents = () => {
   document
     .querySelector('#web-development-filter')
     .addEventListener('click', () => {
-      getVocab().then((vocab) => {
+      getVocab(user.uid).then((vocab) => {
         const filteredVocab = vocab.filter(
           (word) => word.category === 'web development'
         );

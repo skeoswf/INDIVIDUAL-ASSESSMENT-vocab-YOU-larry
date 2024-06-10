@@ -8,16 +8,16 @@ import { showVocab } from '../pages/showVocab';
 import { getVocab } from '../api/vocabData';
 import formEvents from '../events/formEvents';
 
-const startApp = () => {
-  domBuilder();
-  navBar();
-  filterRow();
-  navigationEvents();
-  domEvents();
-  formEvents();
-  logoutButton();
+const startApp = (user) => {
+  domBuilder(user);
+  navBar(user);
+  filterRow(user);
+  navigationEvents(user);
+  domEvents(user);
+  formEvents(user);
+  logoutButton(user);
 
-  getVocab().then((vocab) => showVocab(vocab));
+  getVocab(user.uid).then((vocab) => showVocab(vocab));
 };
 
 export default startApp;
