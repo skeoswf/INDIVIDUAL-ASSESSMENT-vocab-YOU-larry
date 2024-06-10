@@ -7,6 +7,10 @@ const domEvents = () => {
     if (e.target.id.includes('form-entry')) {
       addVocabForm();
     }
+
+    if (e.target.id.includes('logo')) {
+      getVocab().then((vocab) => showVocab(vocab));
+    }
   });
 
   document.querySelector('#card-container').addEventListener('click', (e) => {
@@ -15,6 +19,7 @@ const domEvents = () => {
       getSingleVocab(firebaseKey).then((vocab) => {
         addVocabForm(vocab);
       });
+      getSingleVocab(firebaseKey).then(addVocabForm);
     }
 
     if (e.target.id.includes('delete-vocab-btn')) {
