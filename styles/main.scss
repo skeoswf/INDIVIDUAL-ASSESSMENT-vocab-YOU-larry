@@ -29,8 +29,20 @@ body {
   left: 47%;
 }
 
+#google-auth-test {
+  background-color: rgb(0, 0, 0);
+  border-radius: 0%;
+  border-style: none;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
 #google-auth:hover {
   box-shadow: 20px 15px 0px white;
+}
+
+#google-auth-test:hover {
+  box-shadow: 10px 10px 0px white;
 }
 
 #app {
@@ -41,7 +53,6 @@ body {
   margin: 35px auto 0;
   width: 95%;
   height: 65px;
-  border: 1px solid white;
   display: flex;
   justify-content: space-between;
 }
@@ -74,12 +85,22 @@ body {
 
 #logo {
   margin-top: 20px;
-  color: orange;
+  color: white;
+  text-shadow: 4px 4px 0px black;
+}
+#logo:hover {
+  color: black;
+  text-shadow: 4px 4px 0px white;
+}
+#form-entry {
+  color: black;
+  font-size: 17px;
+  text-underline-offset: 10px;
+  transition: 0.3s ease all;
 }
 
-#form-entry {
+#form-entry:hover {
   color: white;
-  margin-top: 20px;
 }
 
 #left-nav-content {
@@ -127,4 +148,13 @@ body {
 #book {
   margin-top: 600px;
   margin-left: 1050px;
+}
+
+#note {
+  margin-top: -12px;
+  opacity: 0;
+}
+
+#funny-form-box {
+  margin: -10px;
 }
