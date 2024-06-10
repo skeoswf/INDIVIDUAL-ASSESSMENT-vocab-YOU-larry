@@ -16,10 +16,9 @@ const domEvents = () => {
   document.querySelector('#card-container').addEventListener('click', (e) => {
     if (e.target.id.includes('edit-vocab-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((vocab) => {
-        addVocabForm(vocab);
+      getSingleVocab(firebaseKey).then((vocabTerm) => {
+        addVocabForm(vocabTerm);
       });
-      getSingleVocab(firebaseKey).then(addVocabForm);
     }
 
     if (e.target.id.includes('delete-vocab-btn')) {

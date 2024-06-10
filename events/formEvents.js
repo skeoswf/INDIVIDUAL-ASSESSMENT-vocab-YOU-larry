@@ -20,7 +20,7 @@ const formEvents = () => {
       });
     }
 
-    if (e.target.id.includes('edit-vocab-btn')) {
+    if (e.target.id.includes('update-vocab')) {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#title').value,
