@@ -25,6 +25,7 @@ const domEvents = () => {
       // eslint-disable-next-line no-alert
       if (window.confirm('cast the term into the void?')) {
         const [, firebaseKey] = e.target.id.split('--');
+        console.warn(firebaseKey);
 
         deleteVocab(firebaseKey).then(() => {
           getVocab().then(showVocab);
